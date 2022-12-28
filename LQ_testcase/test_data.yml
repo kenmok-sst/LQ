@@ -1,0 +1,296 @@
+login_dev_normal_user_01:
+    username: "18813570001"
+    pwd: "SSt12345"
+login_dev_normal_user_02:
+    username: "18813570002"
+    pwd: "SSt12345"
+login_dev_normal_user_03:
+    username: "18813570003"
+    pwd: "SSt12345"
+login_dev_normal_user_04:
+    username: "18813570004"
+    pwd: "SSt12345"
+login_dev_normal_user_05:
+    username: "18813570005"
+    pwd: "SSt12345"
+login_dev_normal_user_06:
+    username: "18813570006"
+    pwd: "SSt12345"
+login_dev_normal_user_07:
+    username: "18813570007"
+    pwd: "SSt12345"
+login_dev_normal_user_08:
+    username: "18813570008"
+    pwd: "SSt12345"
+
+vcode: "123456"
+
+home_login_button:
+    lang_zhhk: "登入"
+    lang_en: "Login"
+
+login_page_login_button:
+    lang_zhhk: "登入 "
+    lang_en: "Login "
+
+login_page_show_button:
+    lang_zhhk: "顯示"
+    lang_en: "Show"
+
+switch:
+    lang_zhhk: "轉用"
+    lang_en: "SWITCH"
+
+do_not_switch:
+    lang_zhhk: "不轉用"
+    lang_en: "DO NOT SWITCH"
+
+tab_more: 
+    lang_zhhk: "更多"
+    lang_en: "More"
+
+tab_mystatus: 
+    lang_zhhk: "My Status"
+    lang_en: "My Status"
+
+tab_enquiry: 
+    lang_zhhk: "Enquiry"
+    lang_en: "Enquiry"
+
+tab_pharmacysearch: 
+    lang_zhhk: "Pharmacy Search"
+    lang_en: "Pharmacy Search"
+
+hago_back_button: 
+    lang_zhhk: "返回"
+    lang_en: "Back"
+
+confirm_button: 
+    lang_zhhk: "確認"
+    lang_en: "Confirm"
+
+refresh_button: 
+    lang_zhhk: "刷新"
+    lang_en: "Refresh"
+
+fail_to_connect_to_ha_server_text: 
+    lang_zhhk: "無法連接至醫管局伺服器"
+    lang_en: "Failed to connect to HA server"
+
+ok_button: 
+    lang_zhhk: "確認"
+    lang_en: "Ok"
+
+OK_button: 
+    lang_zhhk: "確定"
+    lang_en: "OK"
+
+done_button: 
+    lang_zhhk: "確定"
+    lang_en: "Done"
+
+delete_record_button: 
+    lang_zhhk: "刪除紀錄"
+    lang_en: "Delete Record"
+
+delete_this_ticket_button: 
+    lang_zhhk: "刪除此籌號"
+    lang_en: "Delete this ticket"
+
+switch_language_button:
+    lang_zhhk: "語言／Language"
+    lang_en: "Language / 語言"
+
+switch_to_other_language: 
+    lang_zhhk: "English"
+    lang_en: "繁體中文"
+
+switch_to_other_home: 
+    lang_zhhk: "Home"
+    lang_en: "首頁"
+
+edit_button:
+    lang_zhhk: "編輯"
+    lang_en: "Edit"
+
+mydrug_adddrug_add_button:
+    lang_zhhk: "新增我的藥物"
+    lang_en: "Add My Drug"
+
+mydrug_adddrug_add_text:
+    lang_zhhk: "新增我的藥物"
+    lang_en: "Add My Drug"
+
+mydrug_adddrug_scan_button:
+    lang_zhhk: "掃描公立醫院藥物標籤"
+    lang_en: "Scan HA Drug Label"
+
+no_drug_record_text: 
+    lang_zhhk: "未有藥物紀錄"
+    lang_en: "No Drug Record"
+
+unable_to_save_drug_text: 
+    lang_zhhk: "不能儲存藥物"
+    lang_en: "Unable to Save Drug"
+
+no_ticket_text: 
+    lang_zhhk: "暫未有取藥籌號"
+    lang_en: "No Ticket"
+
+all_text: 
+    lang_zhhk: "全部"
+    lang_en: "All"
+
+sorting_region_History:
+    lang_zhhk: "紀錄"
+    lang_en: "History"
+
+sorting_region_All:
+    lang_zhhk: "全部"
+    lang_en: "All"
+
+sorting_region_HK:
+    lang_zhhk: "香港"
+    lang_en: "HK"
+
+sorting_region_KLN:
+    lang_zhhk: "九龍"
+    lang_en: "KLN"
+
+sorting_region_NT:
+    lang_zhhk: "新界"
+    lang_en: "NT"
+
+search_pharmacy_box:
+    lang_zhhk: "搜尋藥劑部名稱"
+    lang_en: "Search by pharmacy name"
+
+search_pharmacy_keyword:
+    lang_zhhk: "虛擬醫院"
+    lang_en: "Virtual"
+
+hospital_name01:
+    lang_zhhk: "虛擬醫院主座藥劑部"
+    lang_en: "Virtual Hospital Pharmacy"
+
+hospital_name02:
+    lang_zhhk: "虛擬醫院主座藥劑部"
+    lang_en: "Virtual Hospital Pharmacy"
+
+add_and_keep_existing_record_button:
+    lang_zhhk: "新增並保留舊紀錄"
+    lang_en: "Add & Keep Existing Record"
+
+add_and_replace_existing_record_button:
+    lang_zhhk: "新增並取代舊紀錄"
+    lang_en: "Add & Replace Existing Record"
+
+sort_button:
+    lang_zhhk: "排序"
+    lang_en: "Sort"
+
+sort_option_drug_name:
+    lang_zhhk: "以藥物名稱排序（預設）"
+    lang_en: "Sort By Drug Name (Default)"
+
+sort_option_date_time_descending:
+    lang_zhhk: "以建立日期倒序"
+    lang_en: "Sort By Date/Time Created Descending"
+
+sort_option_date_time_ascending:
+    lang_zhhk: "以建立日期順序"
+    lang_en: "Sort By Date/Time Created Ascending"
+
+sort_option_last_modified:
+    lang_zhhk: "以上次修改日期排序"
+    lang_en: "Sort By Last Modified"
+
+
+druginfo_drugname_AD0101: "Aaa"
+druginfo_directionofuse_AD0101: "Bbb"
+druginfo_remarks_AD0101: "Ccc"
+
+druginfo_drugname_AD0102: "Ddd"
+druginfo_directionofuse_AD0102: "Eee"
+druginfo_remarks_AD0102: "Fff"
+
+druginfo_drugname_CD01: "Aaa"
+druginfo_directionofuse_CD01: "Bbb"
+druginfo_remarks_CD01: "Ccc"
+
+druginfo_drugname_CD02: "Ddd"
+druginfo_directionofuse_CD02: "Eee"
+druginfo_remarks_CD02: "Fff"
+
+druginfo_drugname_MD0101: "Aaa"
+druginfo_directionofuse_MD0101: "Bee"
+druginfo_remarks_MD0101: "Dff"
+
+druginfo_drugname_MD0102: "Ddd"
+druginfo_directionofuse_MD0102: "Egg"
+druginfo_remarks_MD0102: "Fhh"
+
+druginfo_drugname_MD0103: "Aaa"
+druginfo_directionofuse_MD0103: "Bbb"
+druginfo_remarks_MD0103: "Ccc"
+
+druginfo_drugname_MD0104: "Aaa"
+druginfo_directionofuse_MD0104: "Bbb"
+druginfo_remarks_MD0104: "Ccc"
+
+test_ticket_01: "1022"
+test_ticket_02_Manual: "645"
+test_ticket_02_QR: "646"
+test_ticket_02_UpdateExistingTicket: "646"
+
+test_04UncollectedTicket_ticket_01: "1006"
+test_04UncollectedTicket_ticket_01_status_01: "Ready"
+test_04UncollectedTicket_ticket_01_status_02: "Ready" # Please contact pharmacy
+test_04UncollectedTicket_ticket_01_status_03: "Ready"
+test_04UncollectedTicket_ticket_01_status_04: "Ready" # Please contact pharmacy
+test_04UncollectedTicket_ticket_02: "0138"
+test_04UncollectedTicket_ticket_03: "0141"
+hospital_name04: "Queen Mary Hospital S1 Central Pharmacy"
+test_04UncollectedTicket_wait_time_01: 10  #in number of seconds
+test_04UncollectedTicket_wait_time_02: 10  #in number of seconds
+hospital_name04_zhhk: "瑪麗醫院"
+test_05CollectionStatus_hospital_01: "Virtual Hospital Pharmacy"
+test_05CollectionStatus_row01_ticket_01: "1007"
+test_05CollectionStatus_row01_ticket_02: "1008"
+test_05CollectionStatus_hospital_02: "Virtual Hospital Pharmacy"
+test_05CollectionStatus_hospital_03: "Virtual Hospital Pharmacy"
+
+test_06_user02_ticket01: "1006"
+test_06_user02_ticket02: "1005"
+test_06_user04_ticket03: "1012"
+test_06_user02_ticket01_status_before: "Ready"
+test_06_user02_ticket01_status_after: "Ready"
+test_06_user02_ticket02_status_before: "Taken"
+test_06_user02_ticket02_status_after: "Taken"
+test_06_user04_ticket03_status_before: "Ready"
+test_06_wait_time: 60  #in number of seconds
+
+test_07_user: "login_data_08"
+test_07_wait_time: 240  #in number of seconds
+test_07_user_ticket01: "1025"
+test_07_user_ticket02: "1040"
+test_07_user_ticket03: "1027"
+test_07_user_ticket04: "1041"
+test_07_user_ticket05: "1021"
+test_07_user_ticket06: "1042"
+test_07_user_ticket5: "GET"
+
+lang_zhhk:
+    home_icon_medication: "藥物"
+    mydrug_adddrug_scan: "掃描公立醫院藥物標籤"
+    mydrug_adddrug_add: "新增我的藥物"
+    more_scan: "掃描公立醫院藥物標籤"
+
+lang_en:
+    home_icon_medication: "Medication"
+    mydrug_adddrug_scan: "Scan HA Drug Label"
+    mydrug_adddrug_add: "Add My Drug"
+    more_scan: "Scan HA drug label"
+
+
+
