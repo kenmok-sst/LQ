@@ -40,8 +40,8 @@ class TestMemberLogin(unittest.TestCase):
         time.sleep(2)
 
         ## Click 密码登录 button
-        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='密码登录']]")))
-        self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='密码登录']]").click()
+        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.LINK_TEXT,"密码登录")))
+        self.driver.find_element_by_link_text("密码登录").click()
         time.sleep(2)
 
         ## Input username
@@ -51,12 +51,6 @@ class TestMemberLogin(unittest.TestCase):
         time.sleep(2)
         self.driver.execute_script("seetest:client.sendText(\""+ login_member_username +"\")")
         time.sleep(2)
-
-        ## Confirm Log-in key
-        #print("Confirm Log-in key")
-        #WebDriverWait(self.driver, 5).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='登录']]")))
-        #self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='登录']]").click()
-        #time.sleep(14)
 
         ## Input password
         print("Input password")

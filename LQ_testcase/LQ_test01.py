@@ -73,7 +73,8 @@ class TestViewTabsAndPages(unittest.TestCase):
 
             # All of the latest Ace
             WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView']]/*[@class='android.view.ViewGroup'])[2]/*/*[@text='全部'])[1]")))
-            self.driver.find_element_by_xpath("xpath=((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView']]/*[@class='android.view.ViewGroup'])[2]/*/*[@text='全部'])[1]").click()
+            self.driver.find_element_by_xpath("((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView']]/*[@class='android.view.ViewGroup'])[2]/*/*[@text='全部'])[1]").click()
+
             time.sleep(5)
 
             # Click 推荐 to go back to Home
@@ -83,12 +84,12 @@ class TestViewTabsAndPages(unittest.TestCase):
 
             # All of the Hot Live
             WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView']]/*[@class='android.view.ViewGroup'])[2]/*/*[@text='全部'])[2]")))
-            self.driver.find_element_by_xpath("xpath=((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView']]/*[@class='android.view.ViewGroup'])[2]/*/*[@text='全部'])[2]").click()
+            self.driver.find_element_by_xpath("((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView']]/*[@class='android.view.ViewGroup'])[2]/*/*[@text='全部'])[2]").click()
             time.sleep(5)
 
             # Click Back icon to go back to Home
             WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@text='󰅁']")))
-            self.driver.find_element_by_xpath("xpath=//*[@text='󰅁']").click()
+            self.driver.find_element_by_xpath("//*[@text='󰅁']").click()
             time.sleep(2)
 
         except TimeoutException:
