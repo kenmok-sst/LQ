@@ -32,8 +32,8 @@ if __name__=="__main__":
 
     ### Test case
     suite = unittest.TestSuite()
-    #suite.addTest(TestViewTabsAndPages('testlq0001'))
-    suite.addTest(TestViewTabsAndPages('testlq0002'))
+    suite.addTest(TestViewTabsAndPages('testlq0001'))
+    #suite.addTest(TestViewTabsAndPages('testlq0002'))
 
     ##### Running Single test case with HTML Test Report
     #runner = HTMLTestRunner(log=True, verbosity=2, output='report', title='Test report', report_name='report',
