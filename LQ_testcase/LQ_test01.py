@@ -47,7 +47,7 @@ class TestViewTabsAndPages(unittest.TestCase):
             #WebDriverWait(self.driver, 15).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@class='android.view.ViewGroup' and ./*[@class='android.view.ViewGroup' and ./*[@text='跳过 4 s']]]]")))
             #self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@class='android.view.ViewGroup' and ./*[@class='android.view.ViewGroup' and ./*[@text='跳过 4 s']]]]").click()
             time.sleep(6)
-
+            
             # Tabs in top of page
             WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='足球']]")))
             self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='足球']]").click()
@@ -58,9 +58,14 @@ class TestViewTabsAndPages(unittest.TestCase):
             WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='主播']]")))
             self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='主播']]").click()
             time.sleep(2)
+
+            ### Temporary Remove Anchor
+            '''
             WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='微头条']]")))
             self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='微头条']]").click()
             time.sleep(2)
+            '''
+
             WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='视频']]")))
             self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='视频']]").click()
             time.sleep(2)
@@ -94,6 +99,11 @@ class TestViewTabsAndPages(unittest.TestCase):
             WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@text='󰅁']")))
             self.driver.find_element_by_xpath("//*[@text='󰅁']").click()
             time.sleep(2)
+
+            ### Click any item searched by text
+            text = 'hanktest2222'
+            self.driver.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("'+text+'").instance(0));').click()
+            time.sleep(4)
 
         except TimeoutException:
             print("LQ0001 View Tabs and Pages Timeout Exception")
