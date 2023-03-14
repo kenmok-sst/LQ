@@ -95,6 +95,14 @@ class TestViewTabsAndPages(unittest.TestCase):
             self.driver.find_element_by_xpath("//*[@text='󰅁']").click()
             time.sleep(2)
 
+            # Swipe to 柬埔寨 in Ace and click
+            text = '柬埔寨'
+            self.driver.execute_script("seetest:client.swipeWhileNotFound(\"Down\", 200, 2000, \"NATIVE\", \"xpath=//*[@class='android.view.ViewGroup' and ./*[@text='"+text+"']]\", 0, 1000, 10, true)")
+            time.sleep(2)
+            WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@text='󰅁']")))
+            self.driver.find_element_by_xpath("//*[@text='󰅁']").click()
+            time.sleep(2)
+
         except TimeoutException:
             print("LQ0001 View Tabs and Pages Timeout Exception")
             assert(False)
