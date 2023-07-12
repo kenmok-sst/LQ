@@ -16,7 +16,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 
-CONF_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\LQ_testcase\\"
+CONF_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/LQ_testcase/"
 
 class TestMemberLogin(unittest.TestCase):
 
@@ -30,40 +30,40 @@ class TestMemberLogin(unittest.TestCase):
         login_member_password = login_member['pwd']
 
         ## Click 我的 button in Bottom Bar
-        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@contentDescription='我的, tab, 4 of 4']")))
-        self.driver.find_element_by_xpath("//*[@contentDescription='我的, tab, 4 of 4']").click()
+        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.ID,"我的, tab, 4 of 4")))
+        self.driver.find_element(By.ID, "我的, tab, 4 of 4").click()
         time.sleep(2)
 
-        ## Click 登录 button
-        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='登录']]")))
-        self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='登录']]").click()
+        ## Click 登錄 button
+        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='登錄']]")))
+        self.driver.find_element(By.XPATH, "//*[@class='android.view.ViewGroup' and ./*[@text='登錄']]").click()
         time.sleep(2)
 
-        ## Click 密码登录 button
-        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.LINK_TEXT,"密码登录")))
-        self.driver.find_element_by_link_text("密码登录").click()
+        ## Click 密码登錄 button
+        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.LINK_TEXT,"密码登錄")))
+        self.driver.find_element(By.LINK_TEXT, "密码登錄").click()
         time.sleep(2)
 
         ## Input username
         print("Input username")
         WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.widget.EditText")))
-        self.driver.find_element_by_xpath("//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.widget.EditText").click()
+        # Input username
         time.sleep(2)
-        self.driver.execute_script("seetest:client.sendText(\""+ login_member_username +"\")")
-        time.sleep(2)
+        self.driver.find_element(By.XPATH, "//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.EditText").send_keys(login_member_username)
+
+
 
         ## Input password
         print("Input password")
-        WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located((By.XPATH,"//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[4]/android.widget.EditText")))
-        self.driver.find_element_by_xpath("//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[4]/android.widget.EditText").click()
+        # Input password
         time.sleep(2)
-        self.driver.execute_script("seetest:client.sendText(\""+ login_member_password +"\")")
-        time.sleep(2)
+        self.driver.find_element(By.XPATH, "//android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.EditText").send_keys(login_member_password)
+
 
         ## Click Log-in key
         print("Click Log-in key")
         WebDriverWait(self.driver, 5).until(expected_conditions.presence_of_element_located((By.XPATH,"//*[@class='android.view.ViewGroup' and ./*[@text='登录']]")))
-        self.driver.find_element_by_xpath("//*[@class='android.view.ViewGroup' and ./*[@text='登录']]").click()
+        self.driver.find_element(By.XPATH, "//*[@class='android.view.ViewGroup' and ./*[@text='登录']]").click()
 
         time.sleep(2)
         print("Member Password Log In End")
